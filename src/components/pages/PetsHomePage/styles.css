@@ -1,0 +1,17 @@
+.pet-page {
+    padding: 10px;
+}
+
+.pets-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.pets-title {
+    padding:1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 1px solid #ddd;
+}
