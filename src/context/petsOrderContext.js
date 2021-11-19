@@ -19,7 +19,7 @@ export const PetsOrderContextProvider = (props) => {
     const addPetToOrder = (pet) => {
         let newOrder = order; 
         newOrder.push (pet);
-        setOrder(order);
+        setOrder(newOrder);
     }
 
     const removePetFromOrder = (petId) => {
