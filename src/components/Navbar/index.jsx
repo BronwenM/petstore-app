@@ -1,6 +1,7 @@
 import {
     NavLink
 } from "react-router-dom";
+import { Logout } from "../Logout";
 
 import { FaStore, FaShoppingCart} from 'react-icons/fa';
 
@@ -10,10 +11,13 @@ export const Navbar = () => {
         <nav className="navbar">
             <ul className="navbar-list">
                 <li>
-                    <NavLink exact={true} activeClassName="nav-selected" to="/">Pets</NavLink>
+                    <NavLink exact={true} activeClassName="nav-selected" to="/"><FaStore/> Pets</NavLink>
                 </li>
                 <li>
-                    <NavLink activeClassName="nav-selected" to="/cart"> My Cart</NavLink>
+                    <NavLink activeClassName="nav-selected" to="/cart"><FaShoppingCart/> My Cart</NavLink>
+                </li>
+                <li>
+                    <Logout/>
                 </li>
             </ul>
         </nav>
