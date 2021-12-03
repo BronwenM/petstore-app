@@ -64,7 +64,7 @@ export const PetsHomePage = () => {
 
   const getPets = async() => {
     try {
-      const response = await fetch('https://firestore.googleapis.com/v1/projects/pets-api-40916/databases/(default)/documents/pets/');
+      const response = await fetch('https://firestore.googleapis.com/v1/projects/itec-login-demo/databases/(default)/documents/pets/');
       const data = await response.json();
       console.log(data);
 
